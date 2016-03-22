@@ -1,0 +1,179 @@
+//U10416004 顏仲賢
+
+import javafx.application.Application;
+import javafx.collections.ObservableList;
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
+import javafx.scene.shape.Polyline;
+import javafx.scene.shape.*;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Ellipse;
+
+public class BeanGame extends Application {
+    	@Override
+   	public void start(Stage primaryStage) {
+		Pane pane = new Pane();
+		Polyline polyline = new Polyline();
+		pane.getChildren().add(polyline);
+		ObservableList<Double> draw = polyline.getPoints();
+	
+		draw.add(270.0);
+		draw.add(105.0);
+
+		draw.add(270.0);
+		draw.add(195.0);
+
+		draw.add(0.0);
+		draw.add(600.0);
+
+		draw.add(120.0);
+		draw.add(600.0);
+		draw.add(120.0);
+		draw.add(495.0);
+		draw.add(120.0);
+		draw.add(600.0);
+
+		draw.add(180.0);
+		draw.add(600.0);
+		draw.add(180.0);
+		draw.add(495.0);
+		draw.add(180.0);
+		draw.add(600.0);
+
+		draw.add(240.0);
+		draw.add(600.0);
+		draw.add(240.0);
+		draw.add(495.0);
+		draw.add(240.0);
+		draw.add(600.0);
+
+		draw.add(300.0);
+		draw.add(600.0);
+		draw.add(300.0);
+		draw.add(495.0);
+		draw.add(300.0);
+		draw.add(600.0);
+
+		draw.add(360.0);
+		draw.add(600.0);
+		draw.add(360.0);
+		draw.add(495.0);
+		draw.add(360.0);
+		draw.add(600.0);
+
+		draw.add(420.0);
+		draw.add(600.0);
+		draw.add(420.0);
+		draw.add(495.0);
+		draw.add(420.0);
+		draw.add(600.0);
+
+		draw.add(480.0);
+		draw.add(600.0);
+		draw.add(480.0);
+		draw.add(495.0);
+		draw.add(480.0);
+		draw.add(600.0);
+
+		draw.add(600.0);
+		draw.add(600.0);
+
+		draw.add(330.0);
+		draw.add(195.0);
+
+		draw.add(330.0);
+		draw.add(105.0);
+		
+		Ellipse a = new Ellipse(120,495,9,9);
+		a.setFill(Color.BLACK);
+
+		Ellipse b = new Ellipse(180,495,9,9);
+		b.setFill(Color.BLACK);
+
+		Ellipse c = new Ellipse(240,495,9,9);
+		c.setFill(Color.BLACK);
+
+		Ellipse d = new Ellipse(300,495,9,9);
+		d.setFill(Color.BLACK);		
+
+		Ellipse e = new Ellipse(360,495,9,9);
+		e.setFill(Color.BLACK);
+
+		Ellipse f = new Ellipse(420,495,9,9);
+		f.setFill(Color.BLACK);
+
+		Ellipse g = new Ellipse(480,495,9,9);
+		g.setFill(Color.BLACK);
+
+		Ellipse h = new Ellipse(150,450,9,9);
+		h.setFill(Color.BLACK);
+
+		Ellipse i = new Ellipse(210,450,9,9);
+		i.setFill(Color.BLACK);
+
+		Ellipse j = new Ellipse(270,450,9,9);
+		j.setFill(Color.BLACK);
+
+		Ellipse k = new Ellipse(330,450,9,9);
+		k.setFill(Color.BLACK);
+
+		Ellipse l = new Ellipse(390,450,9,9);
+		l.setFill(Color.BLACK);
+
+		Ellipse m = new Ellipse(450,450,9,9);
+		m.setFill(Color.BLACK);
+
+		Ellipse n = new Ellipse(180,405,9,9);
+		n.setFill(Color.BLACK);
+
+		Ellipse o = new Ellipse(240,405,9,9);
+		o.setFill(Color.BLACK);
+
+		Ellipse p = new Ellipse(300,405,9,9);
+		p.setFill(Color.BLACK);
+
+		Ellipse q = new Ellipse(360,405,9,9);
+		q.setFill(Color.BLACK);
+
+		Ellipse r = new Ellipse(420,405,9,9);
+		r.setFill(Color.BLACK);
+
+		Ellipse s = new Ellipse(210,360,9,9);
+		s.setFill(Color.BLACK);
+
+		Ellipse t = new Ellipse(270,360,9,9);
+		t.setFill(Color.BLACK);
+
+		Ellipse u = new Ellipse(330,360,9,9);
+		u.setFill(Color.BLACK);
+
+		Ellipse v = new Ellipse(390,360,9,9);
+		v.setFill(Color.BLACK);
+
+		Ellipse w = new Ellipse(240,315,9,9);
+		w.setFill(Color.BLACK);
+
+		Ellipse x = new Ellipse(300,315,9,9);
+		x.setFill(Color.BLACK);
+
+		Ellipse y = new Ellipse(360,315,9,9);
+		y.setFill(Color.BLACK);
+
+		Ellipse z = new Ellipse(270,270,9,9);
+		z.setFill(Color.BLACK);
+
+		Ellipse a1 = new Ellipse(330,270,9,9);
+		a1.setFill(Color.BLACK);
+
+		Ellipse b1 = new Ellipse(300,225,9,9);
+		b1.setFill(Color.BLACK);
+
+		pane.getChildren().addAll(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,a1,b1);
+		Scene scene = new Scene(pane, 750 , 750 );
+       		primaryStage.setScene(scene);
+      		primaryStage.setTitle("Bean Game");
+        	primaryStage.show();
+	}
+}
+
